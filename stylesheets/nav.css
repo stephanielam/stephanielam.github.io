@@ -4,7 +4,7 @@
     font-size: 20px;
     line-height: 1.6; } }
 a {
-  font-family: Bebas;
+  font-family: 'Bebas', 'Oswald', 'Helvetica Neue', 'Helvetica', sans-serif;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; }
@@ -108,7 +108,7 @@ a:focus {
 .btn {
   border-radius: 0;
   text-transform: uppercase;
-  font-family: Bebas,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Bebas', 'Oswald', 'Helvetica Neue', 'Helvetica', sans-serif;
   font-weight: 400;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
