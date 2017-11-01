@@ -33,7 +33,7 @@ $color: white;
 
     #contact {
       h3 {
-        font-size: 20px;
+        font-size: 25px;
       }
 
       #sqr-outline {
@@ -260,7 +260,7 @@ a {
 
   #gallery-container {
     overflow-y: scroll;
-    height: 666px;
+    height: 541px;
     width: 90%;
     padding-bottom: 10%;
 
@@ -291,15 +291,15 @@ a {
 
   #sqr-outline {
     position: absolute;
-    top: -52px;
+    top: -60px;
     right: 100px;
-    width: 450px;
+    width: 500px;
     border: 5px solid black;
   }
 
   p {
     padding: 9px 10px;
-    font-size: 20px;
+    font-size: 25px;
     white-space: nowrap;
     overflow: hidden;
   }

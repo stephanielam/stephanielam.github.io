@@ -14,7 +14,7 @@
   body #work .ctn {
     min-width: 100%; }
   body #contact h3 {
-    font-size: 20px; }
+    font-size: 25px; }
   body #contact #sqr-outline {
     display: none; } }
 @media (max-width: 600px) {
@@ -163,7 +163,7 @@ a {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
 #work #gallery-container {
   overflow-y: scroll;
-  height: 666px;
+  height: 541px;
   width: 90%;
   padding-bottom: 10%; }
   #work #gallery-container img {
@@ -185,13 +185,13 @@ a {
     color: white; }
   #contact #sqr-outline {
     position: absolute;
-    top: -52px;
+    top: -60px;
     right: 100px;
-    width: 450px;
+    width: 500px;
     border: 5px solid black; }
   #contact p {
     padding: 9px 10px;
-    font-size: 20px;
+    font-size: 25px;
     white-space: nowrap;
     overflow: hidden; }
   #contact span {
