@@ -58,12 +58,19 @@ p {
   font-style: italic;
   padding: 6px; }
 
+a {
+  color: white;
+  text-decoration: none; }
+  a:focus, a:active, a:hover {
+    color: #d4d4d4;
+    text-decoration: none; }
+
 .banner {
   -webkit-transform: skew(15deg);
   -moz-transform: skew(15deg);
   -o-transform: skew(15deg);
   background: black;
-  padding: 9px 0px 20px 0px;
+  padding: 14px 0px 20px 0px;
   text-align: center;
   margin: 0px 20px 24px 20px; }
   .banner h2 {
@@ -75,14 +82,15 @@ p {
 button {
   border: none;
   background: black;
-  padding: 8px 20px;
-  letter-spacing: 2px; }
+  padding: 10px 19px;
+  border-radius: 19px; }
+  button a {
+    letter-spacing: 3px;
+    font-size: 16px; }
 
-a {
-  color: white;
-  text-decoration: none; }
-  a:hover {
-    color: #666; }
+button:hover a {
+  text-decoration: none;
+  color: #d4d4d4; }
 
 .divider {
   border-top: 10px solid black;
@@ -183,11 +191,17 @@ a {
   position: relative; }
   #contact h1 {
     color: white; }
+  #contact a {
+    font-size: 24px;
+    margin-right: 10px; }
+  #contact .icon {
+    max-width: 33px;
+    margin-right: 10px; }
   #contact #sqr-outline {
     position: absolute;
     top: -60px;
     right: 100px;
-    width: 500px;
+    width: 530px;
     border: 5px solid black; }
   #contact p {
     padding: 9px 10px;
@@ -197,8 +211,6 @@ a {
   #contact span {
     text-align: right;
     color: white; }
-  #contact .icon {
-    max-width: 24px; }
   #contact #geom {
     position: absolute;
     left: 0;
