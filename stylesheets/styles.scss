@@ -184,7 +184,8 @@ button:hover a {
 #title {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/backgrounds/background1.jpeg);
   background-color: black;
-  background: url(../images/backgrounds/background1.jpeg) center center cover no-repeat fixed;
+  background: url(../images/backgrounds/background1.jpeg) center center no-repeat fixed;
+  background-size: cover;
 
   .container {
     color: white;
@@ -212,8 +213,8 @@ button:hover a {
 #quote {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/backgrounds/background0.jpeg);
   background-color: black;
-  background: url(../images/backgrounds/background0.jpeg) center center cover no-repeat fixed;
-  text-align: center;
+    background: url(../images/backgrounds/background0.jpeg) center center no-repeat fixed;
+  background-size: cover;
 
   #quote-container {
     display: inline-block;
