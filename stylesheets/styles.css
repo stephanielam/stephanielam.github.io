@@ -13,13 +13,13 @@
     display: none; }
   body #work .ctn {
     min-width: 100%; }
-  body #contact h3 {
-    font-size: 25px; }
   body #contact #sqr-outline {
     display: none; } }
 @media (max-width: 600px) {
   body #profile #image-ctn {
     display: none; }
+  body h1 {
+    padding: 30px; }
   body #work .ctn {
     min-width: 100%; }
   body #contact h3 {
@@ -48,14 +48,13 @@ h2 {
   font-size: calc(2em + 5vw); }
 
 h3 {
-  font-size: calc(2.2em + 1vw);
+  font-size: calc(1.8em + 1vw);
   color: #666;
-  padding: 16px 0px; }
+  line-height: 100px; }
 
 p {
   font-size: calc(.9em + .5vw);
-  font-family: 'Georgia';
-  font-style: italic;
+  font-family: Lato;
   padding: 6px; }
 
 a {
@@ -72,18 +71,18 @@ a {
   background: black;
   padding: 14px 0px 20px 0px;
   text-align: center;
-  margin: 0px 20px 24px 20px; }
+  margin: 0px 20px 30px 20px; }
   .banner h2 {
     color: white;
-    font-size: calc(2em + 3vw);
+    padding: 6px;
+    font-size: calc(2em + 1vw);
     -webkit-transform: skew(-15deg);
     margin-top: 0; }
 
 button {
   border: none;
   background: black;
-  padding: 10px 19px;
-  border-radius: 19px; }
+  padding: 10px 19px; }
   button a {
     letter-spacing: 3px;
     font-size: 16px; }
@@ -97,27 +96,38 @@ button:hover a {
   width: 800px; }
 
 #main {
-  height: 100%;
   text-align: center;
-  background-size: cover;
-  background: white;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%), url(../images/backgrounds/brick.jpg);
-  background: url(../images/backgrounds/background1.jpeg) center center cover no-repeat fixed; }
-  #main #brand {
-    width: 90%;
-    min-width: 290px;
-    padding-top: 50px; }
-  #main h3 {
-    padding: 26px 0px; }
-
-#title {
+  background: url(../images/backgrounds/background1.jpeg) center center no-repeat fixed;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/backgrounds/background1.jpeg);
   background-color: black;
-  background: url(../images/backgrounds/background1.jpeg) center center no-repeat fixed;
   background-size: cover; }
-  #title .container {
+  #main .container {
+    padding-top: 12%;
+    padding-bottom: 13%;
     color: white;
     text-shadow: 4px 6px 2px rgba(0, 0, 0, 0.5); }
+  #main #brand {
+    width: 75%;
+    min-width: 290px;
+    padding: 20px; }
+  #main h1 {
+    padding: 60px; }
+  #main h2 {
+    background: black;
+    width: 45vw;
+    font-size: 2.3vw;
+    font-family: Lato;
+    font-weight: bold;
+    letter-spacing: 6px;
+    padding: 10px; }
+  #main h3 {
+    color: white;
+    font-size: 1.6vw;
+    font-family: Lato;
+    font-weight: bold;
+    letter-spacing: 6px;
+    padding-top: 6vw;
+    line-height: 20px; }
 
 #profile .container {
   display: flex; }
@@ -128,6 +138,9 @@ button:hover a {
   width: 39vw;
   max-width: 37vw;
   padding-bottom: 20px; }
+#profile p {
+  font-family: 'Georgia';
+  font-style: italic; }
 
 #quote {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/backgrounds/background0.jpeg);
@@ -152,7 +165,10 @@ button:hover a {
   #skills .container {
     padding: 8% 10%; }
   #skills h3 {
-    padding: 0px 0px 20px 5px; }
+    padding: 0px 0px 20px 5px;
+    line-height: 30px;
+    color: #bdbdbd;
+    font-size: 30px; }
   #skills p {
     padding-left: 20px;
     color: #cacaca; }
@@ -187,10 +203,13 @@ button:hover a {
     filter: grayscale(0%); }
 
 #contact {
-  background: #333;
+  background: #292828;
   position: relative; }
+  #contact .container {
+    padding: 5% 10%; }
   #contact h1 {
-    color: white; }
+    color: white;
+    font-size: 60px; }
   #contact a {
     font-size: 24px;
     margin-right: 10px; }
@@ -230,101 +249,111 @@ button:hover a {
   #timeline .divider {
     padding: 20px; }
 
-#work #projects {
-  padding-bottom: 20px; }
-#work .ctn {
-  display: inline-grid;
-  min-width: 49%;
-  min-height: 180px;
-  padding: 10px;
-  vertical-align: middle;
-  -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 4px 7px 6px 4px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  transition: all 300ms ease;
-  text-align: center; }
-  #work .ctn .inner-ctn {
-    display: flex;
-    align-items: center; }
-  #work .ctn:hover {
-    float: none;
-    max-width: 49%;
-    background: #3b3b3b;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1); }
-#work .proj-icon {
-  display: inline-block;
-  height: 60px;
-  -webkit-transition: all 400ms ease;
-  -moz-transition: all 400ms ease;
-  -o-transition: all 400ms ease;
-  -ms-transition: all 400ms ease;
-  transition: all 400ms ease; }
-#work .ctn:hover .proj-icon {
-  opacity: 0.2;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  display: inline-block;
-  height: 100px;
-  border: 4px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
-  -webkit-animation: smallToBig 800ms alternate infinite ease;
-  -moz-animation: smallToBig 800ms alternate infinite ease;
-  -ms-animation: smallToBig 800ms alternate infinite ease; }
-#work .proj-title {
-  font-size: 30px;
-  padding: 10px;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  transition: all 200ms ease; }
-#work .ctn:hover .proj-title {
-  opacity: 1;
-  color: white;
-  -webkit-animation: smallToBig 300ms ease;
-  -moz-animation: smallToBig 300ms ease;
-  -ms-animation: smallToBig 300ms ease; }
-#work .ca-sub {
-  font-family: 'Lato';
-  font-size: 12px;
-  color: #b9b9b9;
-  display: inline-block;
-  text-transform: uppercase;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  transition: all 200ms ease; }
-#work .ctn:hover .ca-sub {
-  -webkit-animation: moveFromBottom 500ms ease;
-  -moz-animation: moveFromBottom 500ms ease;
-  -ms-animation: moveFromBottom 500ms ease; }
-#work .proj-descrip {
-  display: none;
-  color: white;
-  font-family: 'Lato';
-  font-size: 14px;
-  line-height: 20px;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  transition: all 200ms ease; }
-#work .ctn:hover .proj-descrip {
-  display: inline-block;
-  z-index: 2;
-  -webkit-animation: smallToBig 300ms ease;
-  -moz-animation: smallToBig 300ms ease;
-  -ms-animation: smallToBig 300ms ease; }
+#work {
+  height: 100%;
+  background-size: cover;
+  background: white;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 100%), url(../images/backgrounds/brick.jpg);
+  background: url(../images/backgrounds/background1.jpeg) center center cover no-repeat fixed; }
+  #work #projects {
+    padding-bottom: 20px; }
+  #work h3 {
+    line-height: 20px; }
+  #work .ctn {
+    display: inline-grid;
+    min-width: 49%;
+    min-height: 180px;
+    padding: 10px;
+    vertical-align: middle;
+    -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 7px 6px 4px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    transition: all 300ms ease;
+    text-align: center; }
+    #work .ctn .inner-ctn {
+      display: flex;
+      align-items: center; }
+    #work .ctn:hover {
+      float: none;
+      max-width: 49%;
+      background: #3b3b3b;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1); }
+    #work .ctn img {
+      padding-top: 20px; }
+  #work .proj-icon {
+    display: inline-block;
+    height: 60px;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease; }
+  #work .ctn:hover .proj-icon {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: inline-block;
+    height: 100px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    -webkit-animation: smallToBig 800ms alternate infinite ease;
+    -moz-animation: smallToBig 800ms alternate infinite ease;
+    -ms-animation: smallToBig 800ms alternate infinite ease; }
+  #work .proj-title {
+    font-size: 30px;
+    padding: 10px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    transition: all 200ms ease; }
+  #work .ctn:hover .proj-title {
+    opacity: 1;
+    color: white;
+    -webkit-animation: smallToBig 300ms ease;
+    -moz-animation: smallToBig 300ms ease;
+    -ms-animation: smallToBig 300ms ease; }
+  #work .ca-sub {
+    font-family: 'Lato';
+    font-size: 12px;
+    color: #b9b9b9;
+    display: inline-block;
+    text-transform: uppercase;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    transition: all 200ms ease; }
+  #work .ctn:hover .ca-sub {
+    -webkit-animation: moveFromBottom 500ms ease;
+    -moz-animation: moveFromBottom 500ms ease;
+    -ms-animation: moveFromBottom 500ms ease; }
+  #work .proj-descrip {
+    display: none;
+    color: white;
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    transition: all 200ms ease; }
+  #work .ctn:hover .proj-descrip {
+    display: inline-block;
+    z-index: 2;
+    -webkit-animation: smallToBig 300ms ease;
+    -moz-animation: smallToBig 300ms ease;
+    -ms-animation: smallToBig 300ms ease; }
 @-webkit-keyframes smallToBig {
   from {
     -webkit-transform: scale(0.1); }
