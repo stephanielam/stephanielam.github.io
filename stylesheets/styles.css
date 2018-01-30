@@ -4,22 +4,23 @@
 @immport "partials/mixins";
 @immport "partials/base";
 @immport "compass/css3";
-@media (max-device-width: 600px) {
-  body p {
-    font-size: 20px; }
-  body .container {
-    padding: 10%; }
-  body #profile #image-ctn {
-    display: none; }
-  body #work .ctn {
-    min-width: 100%; }
-  body #contact #sqr-outline {
-    display: none; } }
 @media (max-width: 600px) {
-  body #profile #image-ctn {
-    display: none; }
+  .container {
+    padding: 0%; }
+
+  body .container {
+    padding: 10% 5%; }
   body h1 {
     padding: 30px; }
+  body #main h2 {
+    font-size: 10px;
+    line-height: 20px; }
+  body #main h3 {
+    font-size: 7px; }
+  body p {
+    font-size: 20px; }
+  body #profile #image-ctn {
+    display: none; }
   body #work .ctn {
     min-width: 100%; }
   body #contact h3 {
@@ -28,10 +29,8 @@
     display: none; } }
 *, h1, h2, h3, p {
   margin: 0 auto;
-  padding: 0; }
-
-body {
-  font-family: 'Bebas', 'Oswald', 'Helvetica Neue', 'Helvetica', sans-serif; }
+  padding: 0;
+  font-family: 'Lato', 'Arial'; }
 
 .container {
   padding: 10%;
@@ -42,7 +41,8 @@ body {
   margin: auto; }
 
 h1 {
-  font-size: calc(2em + 9vw); }
+  font-size: calc(2em + 9vw);
+  font-family: 'Bebas', 'Oswald', 'Helvetica Neue', 'Helvetica', sans-serif; }
 
 h2 {
   font-size: calc(2em + 5vw); }
@@ -54,7 +54,6 @@ h3 {
 
 p {
   font-size: calc(.9em + .5vw);
-  font-family: Lato;
   padding: 6px; }
 
 a {
@@ -75,6 +74,7 @@ a {
   .banner h2 {
     color: white;
     padding: 6px;
+    font-family: 'Bebas', 'Oswald', 'Helvetica Neue', 'Helvetica', sans-serif;
     font-size: calc(2em + 1vw);
     -webkit-transform: skew(-15deg);
     margin-top: 0; }
@@ -116,14 +116,12 @@ button:hover a {
     background: black;
     width: 45vw;
     font-size: 2.3vw;
-    font-family: Lato;
     font-weight: bold;
     letter-spacing: 6px;
     padding: 10px; }
   #main h3 {
     color: white;
     font-size: 1.6vw;
-    font-family: Lato;
     font-weight: bold;
     letter-spacing: 6px;
     padding-top: 6vw;
@@ -149,7 +147,7 @@ button:hover a {
   background-size: cover; }
   #quote #quote-container {
     display: inline-block; }
-  #quote h2 {
+  #quote h1 {
     float: left;
     clear: both;
     font-size: calc(1em + 6vw);
@@ -167,8 +165,10 @@ button:hover a {
   #skills h3 {
     padding: 0px 0px 20px 5px;
     line-height: 30px;
-    color: #bdbdbd;
-    font-size: 30px; }
+    color: #d6d6d6;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold; }
   #skills p {
     padding-left: 20px;
     color: #cacaca; }
@@ -193,12 +193,12 @@ button:hover a {
   #work #gallery-container img {
     max-width: 96%;
     padding-bottom: 20px;
-    filter: grayscale(100%);
+    filter: grayscale(90%);
     -webkit-transition: all 155ms ease;
     -moz-transition: all 155ms ease;
     -o-transition: all 155ms ease;
     -ms-transition: all 155ms ease;
-    transition: all 155ms ease; }
+    transition: all 605ms ease; }
   #work #gallery-container img:hover {
     filter: grayscale(0%); }
 
@@ -323,7 +323,6 @@ button:hover a {
     -moz-animation: smallToBig 300ms ease;
     -ms-animation: smallToBig 300ms ease; }
   #work .ca-sub {
-    font-family: 'Lato';
     font-size: 12px;
     color: #b9b9b9;
     display: inline-block;
@@ -340,7 +339,6 @@ button:hover a {
   #work .proj-descrip {
     display: none;
     color: white;
-    font-family: 'Lato';
     font-size: 14px;
     line-height: 20px;
     -webkit-transition: all 200ms ease;
