@@ -303,7 +303,6 @@ button:hover a {
     -ms-animation: smallToBig 800ms alternate infinite ease; }
   #work .proj-title {
     font-size: 30px;
-    font-family: 'Lato';
     font-weight: bold;
     text-transform: uppercase;
     padding: 25px 10px 10px 10px;
@@ -388,18 +387,26 @@ button:hover a {
     padding: 15% 6%; }
   body .banner {
     padding: 10px;
+    letter-spacing: 2px;
     margin: 45px 0px 35px 0px; }
+  body p {
+    font-size: 20px;
+    line-height: 35px; }
   body #main h1 {
     padding: 20px; }
   body #main h2 {
     font-size: 20px;
     width: 100%; }
+  body #main h3 {
+    font-size: 13px;
+    padding-top: 10px; }
   body #main .tagline {
     margin: 3px;
-    width: 69vw; }
-  body p {
-    font-size: 20px;
-    line-height: 35px; }
+    width: 80%;
+    letter-spacing: 4px; }
+  body h2 {
+    letter-spacing: 4px;
+    font-weight: bold; }
   body #profile #image-ctn {
     display: none; }
   body #skills .vert-line {
@@ -413,8 +420,11 @@ button:hover a {
     padding: 15% 6%; }
   body #work .ctn {
     min-width: 100%; }
-  body #contact h3 {
-    font-size: calc(1.5em + 1vw); }
+  body #contact h2 {
+    letter-spacing: 4px;
+    font-weight: bold; }
+  body #contact h3, body #contact a {
+    font-size: 12px; }
   body #contact #sqr-outline {
     display: none; }
   body #contact .container {

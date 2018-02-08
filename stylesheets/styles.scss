@@ -425,7 +425,6 @@ button:hover a {
 
   .proj-title {
     font-size: 30px;
-    font-family: 'Lato';
     font-weight: bold;
     text-transform: uppercase;
     padding: 25px 10px 10px 10px;
@@ -523,7 +522,13 @@ button:hover a {
 
     .banner {
       padding: 10px;
+      letter-spacing: 2px;
       margin: 45px 0px 35px 0px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 35px;
     }
 
     #main {
@@ -536,15 +541,21 @@ button:hover a {
         width: 100%;
       }
 
+      h3 {
+        font-size: 13px;
+        padding-top: 10px;
+      }
+
       .tagline {
         margin: 3px;
-        width: 69vw;
+        width: 80%;
+        letter-spacing: 4px;
       }
     }
 
-    p {
-      font-size: 20px;
-      line-height: 35px;
+    h2 {
+      letter-spacing: 4px;
+      font-weight: bold;
     }
 
     #profile {
@@ -579,8 +590,13 @@ button:hover a {
     }
 
     #contact {
-      h3 {
-        font-size: calc(1.5em + 1vw);
+      h2 {
+        letter-spacing: 4px;
+        font-weight: bold;
+      }
+
+      h3, a {
+        font-size: 12px;
       }
 
       #sqr-outline {
