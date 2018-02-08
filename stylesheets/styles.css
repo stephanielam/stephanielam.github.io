@@ -22,12 +22,14 @@ h1 {
   font-family: 'Bebas', 'Oswald', 'Helvetica Neue', 'Helvetica', sans-serif; }
 
 h2 {
-  font-size: calc(2em + 5vw); }
+  font-size: calc(2em + 5vw);
+  letter-spacing: 10px; }
 
 h3 {
   font-size: calc(1.8em + 1vw);
+  letter-spacing: 4px;
   color: #666;
-  line-height: 100px; }
+  line-height: 90px; }
 
 p {
   font-size: calc(.9em + .5vw);
@@ -35,25 +37,26 @@ p {
 
 a {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  letter-spacing: 3px; }
   a:focus, a:active, a:hover {
     color: #d4d4d4;
     text-decoration: none; }
 
 .banner {
-  -webkit-transform: skew(15deg);
-  -moz-transform: skew(15deg);
-  -o-transform: skew(15deg);
-  background: black;
-  padding: 14px 0px 20px 0px;
+  -webkit-transform: skew(13deg);
+  -moz-transform: skew(13deg);
+  -o-transform: skew(13deg);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  background: none;
+  padding: 14px 0px 14px 0px;
   text-align: center;
   margin: 0px 20px 30px 20px; }
   .banner h2 {
     color: white;
-    padding: 6px;
-    font-family: 'Bebas', 'Oswald', 'Helvetica Neue', 'Helvetica', sans-serif;
+    text-transform: uppercase;
     font-size: calc(2em + 1vw);
-    -webkit-transform: skew(-15deg);
+    -webkit-transform: skew(-13deg);
     margin-top: 0; }
 
 button {
@@ -61,7 +64,6 @@ button {
   background: black;
   padding: 10px 19px; }
   button a {
-    letter-spacing: 3px;
     font-size: 16px; }
 
 button:hover a {
@@ -79,8 +81,8 @@ button:hover a {
   background-color: black;
   background-size: cover; }
   #main .container {
-    padding-top: 12%;
-    padding-bottom: 13%;
+    padding-top: 16%;
+    padding-bottom: 16%;
     color: white;
     text-shadow: 4px 6px 2px rgba(0, 0, 0, 0.5); }
   #main #brand {
@@ -88,22 +90,27 @@ button:hover a {
     min-width: 290px;
     padding: 20px; }
   #main h1 {
-    padding: 50px; }
+    padding: 20px; }
   #main h2 {
-    background: black;
-    width: 45vw;
     font-size: 2.3vw;
-    font-weight: bold;
-    letter-spacing: 6px;
-    padding: 10px;
-    margin: 10px auto; }
+    font-weight: bold; }
   #main h3 {
     color: white;
     font-size: 1.6vw;
     font-weight: bold;
-    letter-spacing: 6px;
     padding-top: 5vw;
     line-height: 20px; }
+  #main span {
+    font-size: 15px;
+    margin-top: 0;
+    padding-top: 0; }
+  #main .tagline {
+    background: rgba(0, 0, 0, 0.9);
+    width: auto;
+    padding: 7px 60px;
+    margin: 30px 0px;
+    display: inline-block;
+    letter-spacing: 6px; }
 
 #profile .container {
   display: flex; }
@@ -128,7 +135,8 @@ button:hover a {
   #quote h1 {
     float: left;
     clear: both;
-    font-size: calc(1em + 6vw);
+    font-size: calc(1em + 6.8vw);
+    letter-spacing: 2px;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
@@ -137,19 +145,19 @@ button:hover a {
     padding: 10px; }
 
 #skills {
-  background: #333; }
+  background: #252525; }
   #skills .container {
     padding: 8% 10%; }
   #skills h3 {
-    padding: 0px 0px 20px 5px;
-    line-height: 30px;
-    color: #d6d6d6;
-    font-size: 30px;
+    line-height: 40px;
+    padding-top: 10px;
+    color: #f5f5f5;
+    font-size: 24px;
     text-transform: uppercase;
     font-weight: bold; }
   #skills p {
-    padding-left: 20px;
-    color: #cacaca; }
+    padding-left: 10px;
+    color: #969696; }
   #skills .vert-line {
     border-left: 12px solid black;
     margin-bottom: 30px;
@@ -185,24 +193,28 @@ button:hover a {
   position: relative; }
   #contact .container {
     padding: 5% 10%; }
-  #contact h1 {
-    color: white;
-    font-size: 60px; }
+  #contact h2 {
+    color: #101010; }
+  #contact h3 {
+    font-size: 26px;
+    font-weight: bold; }
   #contact a {
-    font-size: 24px;
-    margin-right: 10px; }
+    font-size: 16px;
+    margin-right: 20px;
+    font-weight: bold; }
   #contact .icon {
     max-width: 33px;
     margin-right: 10px; }
   #contact #sqr-outline {
     position: absolute;
-    top: -60px;
-    right: 100px;
-    width: 540px;
-    border: 5px solid black; }
+    top: -52px;
+    right: 140px;
+    width: 460px;
+    border: 4px solid black; }
   #contact p {
-    padding: 4px 10px;
+    padding: 5px 25px;
     font-size: 28px;
+    letter-spacing: 2px;
     white-space: nowrap;
     overflow: hidden; }
   #contact span {
@@ -235,6 +247,11 @@ button:hover a {
   background: url(../images/backgrounds/background1.jpeg) center center cover no-repeat fixed; }
   #work #projects {
     padding-bottom: 20px; }
+  #work .banner {
+    border: 3px solid rgba(0, 0, 0, 0.1); }
+    #work .banner h2 {
+      color: #404040;
+      font-weight: bold; }
   #work h3 {
     line-height: 20px; }
   #work .ctn {
@@ -276,19 +293,20 @@ button:hover a {
   #work .ctn:hover .proj-icon {
     opacity: 0.2;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 10px;
     z-index: -1;
     display: inline-block;
     height: 100px;
-    border: 4px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
     -webkit-animation: smallToBig 800ms alternate infinite ease;
     -moz-animation: smallToBig 800ms alternate infinite ease;
     -ms-animation: smallToBig 800ms alternate infinite ease; }
   #work .proj-title {
     font-size: 30px;
-    padding: 10px;
+    font-family: 'Lato';
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 25px 10px 10px 10px;
+    letter-spacing: 2px;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     -o-transition: all 200ms ease;
@@ -297,6 +315,7 @@ button:hover a {
   #work .ctn:hover .proj-title {
     opacity: 1;
     color: white;
+    padding-top: 30px;
     -webkit-animation: smallToBig 300ms ease;
     -moz-animation: smallToBig 300ms ease;
     -ms-animation: smallToBig 300ms ease; }
@@ -364,31 +383,43 @@ button:hover a {
   body *, body h1, body h2, body h3, body p {
     margin: 0 auto;
     padding: 0; }
-  body #main .container {
-    padding: 30% 5%; }
+  body .container {
+    padding: 15% 6%; }
+  body .banner {
+    padding: 10px;
+    margin: 45px 0px 35px 0px; }
   body #main h1 {
     padding: 20px; }
   body #main h2 {
     font-size: 20px;
     width: 100%; }
-  body #main h3 {
-    font-size: 14px;
-    line-height: 20px;
-    display: inline-block; }
-  body h2 {
-    font-size: 20px;
-    line-height: 20px; }
-  body h3 {
-    font-size: 7px; }
+  body #main .tagline {
+    margin: 3px;
+    width: 69vw; }
   body p {
-    font-size: 20px; }
+    font-size: 20px;
+    line-height: 35px; }
   body #profile #image-ctn {
     display: none; }
+  body #skills .vert-line {
+    margin-left: 0px;
+    border-left: 0px; }
+  body #skills h3 {
+    padding: 0px 0px 8px 0px; }
+  body #skills p {
+    padding: 0px 0px 4px 0px; }
+  body #skills .container {
+    padding: 15% 6%; }
   body #work .ctn {
     min-width: 100%; }
   body #contact h3 {
     font-size: calc(1.5em + 1vw); }
   body #contact #sqr-outline {
+    display: none; }
+  body #contact .container {
+    padding: 12% 10%; } }
+@media (max-width: 950px) {
+  #contact #sqr-outline {
     display: none; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -33,12 +33,14 @@ h1 {
 
 h2 {
   font-size: calc(2em + 5vw);
+  letter-spacing: 10px;
 }
 
 h3 {
   font-size: calc(1.8em + 1vw);
+  letter-spacing: 4px;
   color: $accent-color;
-  line-height: 100px;
+  line-height: 90px;
 }
 
 p {
@@ -49,6 +51,7 @@ p {
 a {
   color: white;
   text-decoration: none;
+  letter-spacing: 3px;
 
     &:focus,
     &:active,
@@ -59,20 +62,20 @@ a {
 }
 
 .banner {
-  -webkit-transform: skew(15deg);
-  -moz-transform: skew(15deg);
-  -o-transform: skew(15deg);
-  background: black;
-  padding: 14px 0px 20px 0px;
+  -webkit-transform: skew(13deg);
+  -moz-transform: skew(13deg);
+  -o-transform: skew(13deg);
+  border: 3px solid rgba(255,255,255,0.2);
+  background: none;
+  padding: 14px 0px 14px 0px;
   text-align: center;
   margin: 0px 20px 30px 20px;
 
   h2 {
     color: white;
-    padding: 6px;
-    font-family: 'Bebas', 'Oswald', 'Helvetica Neue', 'Helvetica', sans-serif;
+    text-transform: uppercase;
     font-size: calc(2em + 1vw);
-    -webkit-transform: skew(-15deg);
+    -webkit-transform: skew(-13deg);
     margin-top: 0;
   }
 }
@@ -83,7 +86,6 @@ button {
   padding: 10px 19px;
 
   a {
-    letter-spacing: 3px;
     font-size: 16px;
   }
 }
@@ -106,8 +108,8 @@ button:hover a {
   background-size: cover;
 
   .container {
-    padding-top: 12%;
-    padding-bottom: 13%;
+    padding-top: 16%;
+    padding-bottom: 16%;
     color: white;
     text-shadow: 4px 6px 2px rgba(0, 0, 0, 0.5);
   }
@@ -119,26 +121,35 @@ button:hover a {
   }
 
   h1 {
-    padding: 50px;
+    padding: 20px;
   }
 
   h2 {
-    background: black;
-    width: 45vw;
     font-size: 2.3vw;
     font-weight: bold;
-    letter-spacing: 6px;
-    padding: 10px;
-    margin: 10px auto;
   }
 
   h3 {
     color: white;
     font-size: 1.6vw;
     font-weight: bold;
-    letter-spacing: 6px;
     padding-top: 5vw;
     line-height: 20px;
+  }
+
+  span {
+    font-size: 15px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .tagline {
+    background: rgba(0,0,0,0.9);
+    width: auto;
+    padding: 7px 60px;
+    margin: 30px 0px;
+    display:inline-block;
+    letter-spacing: 6px;
   }
 }
 
@@ -177,7 +188,8 @@ button:hover a {
   h1 {
     float: left;
     clear: both;
-    font-size: calc(1em + 6vw);
+    font-size: calc(1em + 6.8vw);
+    letter-spacing: 2px;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
@@ -188,24 +200,24 @@ button:hover a {
 }
 
 #skills {
-  background: #333;
+  background: #252525;
 
   .container {
     padding: 8% 10%;
   }
 
   h3 {
-    padding: 0px 0px 20px 5px;
-    line-height: 30px;
-    color: #d6d6d6;
-    font-size: 30px;
+    line-height: 40px;
+    padding-top: 10px;
+    color: #f5f5f5;
+    font-size: 24px;
     text-transform: uppercase;
     font-weight: bold;
   }
 
   p {
-    padding-left: 20px;
-    color: #cacaca;
+    padding-left: 10px;
+    color: #969696;
   }
 
   .vert-line {
@@ -261,14 +273,19 @@ button:hover a {
     padding: 5% 10%;
   }
 
-  h1 {
-    color: white;
-    font-size: 60px;
+  h2 {
+    color: #101010;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: bold;
   }
 
   a {
-    font-size: 24px;
-    margin-right: 10px;
+    font-size: 16px;
+    margin-right: 20px;
+    font-weight: bold;
   }
 
   .icon {
@@ -278,15 +295,16 @@ button:hover a {
 
   #sqr-outline {
     position: absolute;
-    top: -60px;
-    right: 100px;
-    width: 540px;
-    border: 5px solid black;
+    top: -52px;
+    right: 140px;
+    width: 460px;
+    border: 4px solid black;
   }
 
   p {
-    padding: 4px 10px;
+    padding: 5px 25px;
     font-size: 28px;
+    letter-spacing: 2px;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -334,6 +352,14 @@ button:hover a {
     padding-bottom: 20px;
   }
 
+  .banner {
+    border: 3px solid rgba(0,0,0,0.1);
+
+    h2 {
+      color: #404040;
+      font-weight: bold;
+    }
+  }
   h3 {
     line-height: 20px;
   }
@@ -387,13 +413,10 @@ button:hover a {
   .ctn:hover .proj-icon {
     opacity: 0.2;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 10px;
     z-index: -1;
     display: inline-block;
-    height:100px;
-    border: 4px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
+    height: 100px;
     -webkit-animation: smallToBig 800ms alternate infinite ease;
     -moz-animation: smallToBig 800ms alternate infinite ease;
     -ms-animation: smallToBig 800ms alternate infinite ease;
@@ -401,7 +424,11 @@ button:hover a {
 
   .proj-title {
     font-size: 30px;
-    padding: 10px;
+    font-family: 'Lato';
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 25px 10px 10px 10px;
+    letter-spacing: 2px;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     -o-transition: all 200ms ease;
@@ -412,6 +439,7 @@ button:hover a {
   .ctn:hover .proj-title{
     opacity: 1;
     color: white;
+    padding-top: 30px;
     -webkit-animation: smallToBig 300ms ease;
     -moz-animation: smallToBig 300ms ease;
     -ms-animation: smallToBig 300ms ease;
@@ -481,8 +509,6 @@ button:hover a {
   }
 }
 
-
-
 @media(max-width: 600px) {
   body {
     *, h1, h2, h3, p  {
@@ -490,13 +516,18 @@ button:hover a {
       padding: 0;
     }
 
-    #main{
-      .container {
-        padding: 30% 5%;
-      }
+    .container {
+      padding: 15% 6%;
+    }
 
+    .banner {
+      padding: 10px;
+      margin: 45px 0px 35px 0px;
+    }
+
+    #main {
       h1 {
-        padding:20px;
+        padding: 20px;
       }
 
       h2 {
@@ -504,29 +535,39 @@ button:hover a {
         width: 100%;
       }
 
-      h3 {
-        font-size: 14px;
-        line-height: 20px;
-        display: inline-block;
+      .tagline {
+        margin: 3px;
+        width: 69vw;
       }
     }
-
-    h2 {
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-      h3 {
-        font-size:7px;
-      }
 
     p {
       font-size: 20px;
+      line-height: 35px;
     }
 
     #profile {
       #image-ctn  {
         display: none;
+      }
+    }
+
+    #skills {
+      .vert-line {
+        margin-left: 0px;
+        border-left: 0px;
+      }
+
+      h3 {
+        padding: 0px 0px 8px 0px;
+      }
+
+      p {
+        padding: 0px 0px 4px 0px;
+      }
+
+      .container {
+        padding: 15% 6%;
       }
     }
 
@@ -544,7 +585,18 @@ button:hover a {
       #sqr-outline {
         display: none;
       }
+
+      .container {
+        padding: 12% 10%;
+      }
     }
   }
 }
 
+@media(max-width: 950px) {
+ #contact {
+      #sqr-outline {
+        display: none;
+      }
+    }
+}

@@ -1,17 +1,8 @@
-@media(min-width:855px) {
-    p {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
-    }
-}
-
 a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-
 
 .navbar {
   text-transform: uppercase;
@@ -38,6 +29,7 @@ a {
 .navbar-custom .navbar-brand {
     font-size: 30px;
     padding: 15px 25px;
+    font-weight: bold;
 }
 
 .navbar-custom .navbar-toggle {
@@ -131,4 +123,15 @@ a {
     outline: 0;
     color: #000;
     background-color: #42dca3;
+}
+
+@media(max-width: 600px) {
+
+        .navbar-custom {
+            li {
+                a {
+                    text-align: center
+                }
+            }
+        }
 }
