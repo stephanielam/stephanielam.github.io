@@ -19,7 +19,9 @@ a {
     font-size: 20px; }
     .navbar li a {
       text-decoration: none;
-      color: white; }
+      color: white;
+      font-weight: bolder;
+      letter-spacing: 3px; }
 
 .navbar-custom .navbar-brand {
   font-size: 30px;
@@ -44,11 +46,11 @@ a {
 .navbar-custom .nav li a:active {
   background-color: transparent; }
 
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.2); }
+
 .navbar-custom .nav li:hover a {
   background-color: rgba(255, 255, 255, 0.3); }
-
-.navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.4); }
 
 @media (min-width: 855px) {
   .navbar-custom {

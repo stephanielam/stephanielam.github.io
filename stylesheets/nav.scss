@@ -29,6 +29,8 @@ a {
     a {
       text-decoration: none;
       color: white;
+      font-weight: bolder;
+      letter-spacing: 3px;
     }
   }
 }
@@ -65,14 +67,15 @@ a {
     background-color: transparent;
 }
 
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .navbar-custom .nav li:hover a {
   background-color: rgba(255,255,255,.3);
 
 }
 
-.navbar-custom .nav li.active a {
-  background-color: rgba(255,255,255,.4);
-}
 
 @media(min-width:855px) {
     .navbar-custom {
