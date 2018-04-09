@@ -127,7 +127,8 @@ button:hover a {
   font-family: 'Georgia';
   font-style: italic;
   line-height: 32px;
-  margin-right: 90px; }
+  margin-left: 0px;
+  max-width: 500px; }
 
 #quote {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/backgrounds/background0.jpeg);
@@ -193,7 +194,7 @@ button:hover a {
     filter: grayscale(0%); }
 
 #contact {
-  background: #e6d0d0;
+  background: #e2d5d5;
   position: relative; }
   #contact .container {
     padding: 5% 10%; }
