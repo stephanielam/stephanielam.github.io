@@ -178,8 +178,8 @@ button:hover a {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
 #work #gallery-container {
   overflow-y: scroll;
-  height: 1200px;
-  width: 70%;
+  height: 910px;
+  width: 915px;
   padding-bottom: 10%; }
   #work #gallery-container img {
     max-width: 96%;
@@ -276,7 +276,7 @@ button:hover a {
   #work .ctn {
     display: inline-grid;
     min-width: 30%;
-    min-height: 180px;
+    min-height: 290px;
     padding: 10px;
     vertical-align: middle;
     -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.2);
@@ -288,6 +288,7 @@ button:hover a {
     transition: all 300ms ease;
     text-align: center; }
     #work .ctn .inner-ctn {
+      padding: 42px;
       display: flex;
       align-items: center; }
     #work .ctn:hover {
@@ -303,7 +304,7 @@ button:hover a {
       padding-top: 20px; }
   #work .proj-icon {
     display: inline-block;
-    height: 60px;
+    height: 90px;
     -webkit-transition: all 400ms ease;
     -moz-transition: all 400ms ease;
     -o-transition: all 400ms ease;
@@ -338,7 +339,8 @@ button:hover a {
     -moz-animation: smallToBig 300ms ease;
     -ms-animation: smallToBig 300ms ease; }
   #work .ca-sub {
-    font-size: 12px;
+    font-size: 15px;
+    letter-spacing: 6px;
     color: #b9b9b9;
     display: inline-block;
     text-transform: uppercase;

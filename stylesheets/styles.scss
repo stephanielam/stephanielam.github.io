@@ -249,8 +249,8 @@ button:hover a {
 
   #gallery-container {
     overflow-y: scroll;
-    height: 1200px;
-    width: 70%;
+    height: 910px;
+    width: 915px;
     padding-bottom: 10%;
 
     img {
@@ -395,7 +395,7 @@ button:hover a {
   .ctn {
     display: inline-grid;
     min-width: 30%;
-    min-height: 180px;
+    min-height: 290px;
     padding: 10px;
     vertical-align: middle;
     -webkit-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.2);
@@ -408,6 +408,7 @@ button:hover a {
     text-align: center;
 
     .inner-ctn {
+      padding: 42px;
       display: flex;
       align-items: center;
     }
@@ -430,7 +431,7 @@ button:hover a {
 
   .proj-icon {
     display: inline-block;
-    height: 60px;
+    height: 90px;
     -webkit-transition: all 400ms ease;
     -moz-transition: all 400ms ease;
     -o-transition: all 400ms ease;
@@ -473,7 +474,8 @@ button:hover a {
   }
 
   .ca-sub{
-    font-size: 12px;
+    font-size: 15px;
+    letter-spacing: 6px;
     color: #b9b9b9;
     display: inline-block;
     text-transform: uppercase;
